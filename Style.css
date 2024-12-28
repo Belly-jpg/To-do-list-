@@ -1,0 +1,111 @@
+/* Apply a soft pink gradient background */
+body {
+  font-family: 'Roboto', sans-serif;
+  background: linear-gradient(135deg, #ffdde1, #ee9ca7);
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  color: #5a5a5a;
+}
+
+/* App container */
+.container {
+  background: rgba(255, 255, 255, 0.9);
+  padding: 20px;
+  border-radius: 20px;
+  box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  width: 400px;
+}
+
+/* Heading with Dancing Script font */
+h1 {
+  font-family: 'Dancing Script', cursive;
+  color: #d63384;
+  font-size: 36px;
+  margin-bottom: 5px;
+}
+
+/* Current date styling */
+#current-date {
+  font-family: 'Roboto', sans-serif;
+  color: #8a2be2;
+  font-size: 14px;
+  margin-bottom: 15px;
+}
+
+/* Input section for tasks */
+.input-section {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+#task-input {
+  flex: 1;
+  padding: 10px;
+  border: 2px solid #ffa3d7;
+  border-radius: 8px;
+  background-color: #fff;
+}
+
+#add-task-btn {
+  padding: 10px 15px;
+  border: none;
+  background-color: #ff69b4;
+  color: #fff;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background-color 0.3s;
+}
+
+#add-task-btn:hover {
+  background-color: #d63384;
+}
+
+/* Task list styling */
+#task-list {
+  list-style: none;
+  padding: 0;
+  margin-top: 10px;
+}
+
+#task-list li {
+  background: #ffe6f0;
+  margin: 5px 0;
+  padding: 10px;
+  border: 2px solid #ffa3d7;
+  border-radius: 8px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: all 0.3s;
+  font-family: 'Roboto', sans-serif;
+}
+
+#task-list li:hover {
+  transform: scale(1.02);
+}
+
+#task-list li.completed {
+  text-decoration: line-through;
+  opacity: 0.6;
+}
+
+#task-list li button {
+  background: #ff69b4;
+  color: #fff;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+#task-list li button:hover {
+  background: #d63384;
+}
